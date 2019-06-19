@@ -1,0 +1,65 @@
+===============================================
+Adaptive_filtering_toolbox_v4 (January 9, 2012)
+===============================================
+General: 
+   Modifications in IIR_Adaptive_Filters directory.
+
+Upgrades:
+- Correction in ErrorEquation.m;
+- Two new examples were added: 
+  * example_systemID_ErrorEquation2.m and; 
+  * example_systemID_Steiglitz_McBride2.m;
+- The error used at the updating process of Steiglitz McBride algorithm was changed 
+considering an approximation that yields better results (in terms of bias): 
+$e_s(k) \approx e(k)$.
+
+
+
+===============================================
+Adaptive_filtering_toolbox_v3 (January 6, 2011)
+===============================================
+General:
+   In this version of the toolbox the user will find almost all the functions presented 
+in the book "Adaptive Filtering: Algorithms and Practical Implementation", 3rd. edition, 
+Springer, whose author is Paulo S.R. Diniz. 
+   The Adaptive_filtering_toolbox_v3 is comprised of 82 MATLAB scripts and 1 '.mat' file
+corresponding to both adaptive filtering algorithms and scripts that provide examples of 
+how to use the algorithms.
+
+Upgrades:
+- Encoding of all .m files was changed to Unicode UTF-8.
+- Some corrections in the HELP of some functions (e.g.: RLS).
+- Revision of some functions:
+  . LMS-based algorithms; 
+  . RLS algorithms;
+  . Set-membership algorithms. 
+- New functions: 
+  . Lattice-based RLS algorithms; 
+  . Fast transversal RLS algorithms; 
+  . QR-decomposition-based RLS algorithms;
+  . Adaptive IIR Filters;
+  . Nonlinear Adaptive Filtering*;
+  . Subband Adaptive Filters*;
+  . Blind Adaptive Filtering.
+* These are the only functions that do not follow the prototype used for most of the functions, 
+see readme_toolbox. This is mainly because of the simulation time.
+
+
+
+=================================================
+Adaptive_filtering_toolbox_v2 (September 3, 2009)
+=================================================
+- Correction to the script "example_systemID_Dual_sign.m": (thanks to Professor Marcelo Ventura)
+ It was calling the "Sign_error" function instead of calling the "Dual_sign" one.
+
+
+
+=============================
+Adaptive_filtering_toolbox_v1
+=============================
+- Provided all the adaptive filtering algorithms presented in chapters 1 to 6 of [1].
+
+
+[1] P.S.R. Diniz, "Adaptive Filtering: Algorithms and Practical Implementation", 3rd Ed., Springer.  
+
+

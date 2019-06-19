@@ -1,0 +1,34 @@
+   In order to facilitate the usage of the Adaptive Filtering Toolbox, the authors have chosen to use a similar prototype 
+for all the functions, whenever it was possible. Following we illustrate such prototype:
+
+function    [outputVector,...
+             errorVector,...
+             coefficientVector] =   Affine_projection(desired,input,S)
+
+where,
+
+. desired: is the desired signal referred to as d(k) in [1]
+
+. input: is the input signal referred to as x(k) in [1]
+
+. outputVector: is the output of the adaptive filtering referred to as y(k) in [1]
+
+. errorVector: is the error signal referred to as e(k) in [1]
+
+. coefficientVector: is the impulse response of the adaptive filter referred to as w(k) in [1]
+
+. S: is a structure in which the user sets specific parameters of the algorithm (in this case, the Affine_projection algorithm).
+
+
+
+  For further details about a specific function, type: "help <function>"
+Ex: > help Affine_projection
+
+
+  If it is the first time using the toolbox it might be helpful to take a look at the example scripts, which provide simple 
+system identification and channel equalization (in the case of blind algorithms) scenarios.
+
+
+[1] P. S. R. Diniz, "Adaptive Filtering: Algorithms and Practical Implementation", 3rd Ed., Springer.  
+
+
